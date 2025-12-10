@@ -1,0 +1,73 @@
+*{
+  margin: 0;
+  font-family: "Inter", sans-serif;
+
+}
+.Header{
+   width: 100%;         
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    background-color: rgba(233, 32, 39, 0.825);
+    padding: 10px;
+    color: white;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+   font-size: 0.9rem;
+}
+.globe{
+    width: 20px;
+    margin-right: 5px;
+}
+.JEntry{
+  display: flex;
+
+}
+.img-container{
+  width: 125px;
+  height: 168px;
+  overflow: hidden;
+  border-radius: 10px;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+.main-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container{
+  margin: 45px 40px;
+}
+.marker{
+  width: 10px;
+  margin-right: 1px;
+}
+.country{
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+div > a {
+  color:#2B283A;
+  font-size: 0.7rem;
+}
+div > a:visited{
+   color: #918E9B;
+}
+.entry-title{
+  margin-top: 7px;
+  margin-bottom: 17px;
+}
+.entry-date{
+  font-weight: bold;
+}
+.entry-text {
+  line-height: 1.5;
+  font-size: 0.8rem;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
