@@ -1,32 +1,29 @@
-export default function Entry() {
+export default function Entry(props) {
     return (
         <article className="JEntry">
             
             <div className="img-container">
                 <img
                     className="main-img"
-                    src="https://scrimba.com/links/travel-journal-japan-image-url"
+                    src={props.img}
                 />
             </div>
 
             <div className="entry-info">
                 <img className="marker" src="/marker.png" />
-                <span className="country">Japan</span>
-                <a href="https://www.google.com/maps/place/Mount+Fuji">
+                <span className="country">{props.country}</span>
+                <a href={props.location} target="blank">
                     View on Google Map
                 </a>
 
-                <h2 className="entry-title">Mount Fuji</h2>
+                <h2 className="entry-title">{props.name}</h2>
 
                 <p className="entry-date">
-                    12 Jan, 2023 – 24 Jan, 2023
+                   {props.date}
                 </p>
 
                 <p className="entry-text">
-                    Mount Fuji is the tallest mountain in Japan, standing at
-                    3,776 meters (12,380 feet). Mount Fuji is the single most
-                    popular tourist site in Japan, for both Japanese and foreign
-                    tourists.
+                   {props.etext}
                 </p>
             </div>
 
